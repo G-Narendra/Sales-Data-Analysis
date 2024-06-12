@@ -1,0 +1,50 @@
+Final Project Report
+Data Cleaning
+The initial dataset contained some missing values and columns with incorrect data types. The following cleaning steps were performed:
+
+Removing NaN Values: All rows with missing values were dropped to ensure data integrity.
+Type Conversion: Columns such as 'Order Date' were converted to datetime format, while 'Quantity Ordered' and 'Price Each' were converted to numeric types.
+Feature Engineering
+To enhance the analysis, additional features were extracted from the existing data:
+
+Month: Extracted from the 'Order Date' to analyze monthly sales trends.
+Hour: Extracted from the 'Order Date' to examine sales distribution throughout the day.
+City: Extracted from the 'Purchase Address' to study sales performance across different cities.
+Sales: Calculated as the product of 'Quantity Ordered' and 'Price Each'.
+Exploratory Data Analysis (EDA)
+The EDA provided valuable insights into the sales data through various visualizations:
+
+Monthly Sales:
+
+A bar plot of monthly sales revealed the sales trends across different months, highlighting peak sales periods.
+Sales by City:
+
+A bar plot showed the total sales by city, identifying the most profitable cities.
+Sales by Hour:
+
+A bar plot of hourly sales helped understand the distribution of sales throughout the day, indicating peak hours for sales.
+Sales Forecasting
+The sales data was resampled by month and an ARIMA model was used to forecast future sales. The steps included:
+
+Time Series Plot: Visualizing the monthly sales over time to understand the trend and seasonality.
+ARIMA Model: Fitting the ARIMA model with parameters (1, 1, 1) to the monthly sales data.
+Forecasting: Generating a 12-month sales forecast.
+The forecasted values indicated expected sales for the next 12 months, providing a basis for business planning and strategy formulation.
+
+Forecast Results
+The ARIMA model forecasted the following monthly sales for the next year:
+
+February 2020: 2,908,670
+March 2020: 336,821
+April 2020: 2,617,652
+May 2020: 594,909
+June 2020: 2,388,767
+July 2020: 797,894
+August 2020: 2,208,752
+September 2020: 957,540
+October 2020: 2,067,170
+November 2020: 1,083,101
+December 2020: 1,955,817
+January 2021: 1,181,854
+Conclusion
+This project provided a comprehensive analysis of the sales data, uncovering key trends and patterns in monthly, hourly, and city-wise sales. The ARIMA model's forecast offers actionable insights for future sales, helping the business to strategize and optimize operations. By leveraging these insights, the company can improve its sales performance and make data-driven decisions to enhance profitability.

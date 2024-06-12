@@ -1,0 +1,28 @@
+Introduction to the Dataset
+The dataset used for this project is a comprehensive sales dataset containing transaction details for various products sold over a period. The dataset includes the following columns:
+
+Unnamed: 0: An index column.
+Order ID: A unique identifier for each order.
+Product: The name of the product sold.
+Quantity Ordered: The quantity of the product ordered.
+Price Each: The price of each unit of the product.
+Order Date: The date and time when the order was placed.
+Purchase Address: The address where the product was purchased.
+Month: The month extracted from the order date.
+Sales: The total sales amount calculated by multiplying the quantity ordered by the price of each unit.
+City: The city extracted from the purchase address.
+Hour: The hour extracted from the order date.
+The dataset contains 185,950 entries, each representing a unique sales transaction. The data is rich in information, providing ample opportunities for analysis and insights into sales trends, customer behavior, and forecasting future sales.
+
+Project Description
+The main objective of this project is to analyze and forecast sales using the provided sales data. The project involves the following steps:
+
+Data Cleaning: Handling missing values, converting columns to appropriate data types, and removing duplicates.
+Feature Engineering: Extracting additional features such as month, hour, and city from existing columns to enhance the analysis.
+Exploratory Data Analysis (EDA): Visualizing sales data to uncover trends and patterns, including:
+Monthly Sales
+Sales by City
+Sales by Hour
+Sales Forecasting: Using the ARIMA (AutoRegressive Integrated Moving Average) model to forecast future sales based on historical data.
+By performing these steps, we aim to gain insights into the sales performance over time, identify the most profitable periods and locations, and predict future sales to aid in business planning and decision-making.
+
